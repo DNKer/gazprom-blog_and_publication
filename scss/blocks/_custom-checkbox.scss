@@ -5,7 +5,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    list-style: none;
     margin: 0;
     padding: 28px 0 0;
 
@@ -19,7 +18,7 @@
     width: 100%;
     display: flex;
 
-    &:checked + .custom-checkbox__label {
+    &:checked+.custom-checkbox__label {
       border: 1px solid $color-blue;
       color: $color-blue;
     }
@@ -33,11 +32,8 @@
     color: $color-dim-gray;
     cursor: pointer;
     display: flex;
-    font-size: 13px;
-    font-weight: 400;
     justify-content: center;
-    line-height: 16px;
-    padding: 8px 10px;
+    padding: 8px;
     transition: background-color $transition-300,
       color $transition-300,
       border-color $transition-300;
@@ -54,4 +50,9 @@
     transform: translate(0, -50%);
   }
 
+  &__text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+  }
 }

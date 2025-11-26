@@ -9,6 +9,11 @@
   $root: &;
   transition: transform $transition-300;
 
+  &:hover,
+  &:focus-visible {
+    cursor: pointer;
+  }
+
   &:hover &__img,
   &:focus-visible &__img {
     transform: translate(-10px, 10px);
@@ -135,6 +140,7 @@
   }
 
   &__title {
+    max-width: 296px;
     font-size: 20px;
     font-weight: 300;
     line-height: 26px;

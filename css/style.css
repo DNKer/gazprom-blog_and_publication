@@ -266,7 +266,6 @@ textarea {
 }
 
 .visually-hidden {
-  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -1231,8 +1230,8 @@ textarea {
 }
 
 .blog-hero {
-  padding-top: 116px;
-  padding-bottom: 95px;
+  padding-top: 113px;
+  padding-bottom: 98px;
 }
 @media (max-width: 1023px) {
   .blog-hero {
@@ -1267,7 +1266,6 @@ textarea {
   font-weight: 300;
   line-height: 110px;
   margin: 0;
-  padding-right: 40px;
   text-transform: uppercase;
   color: #000000;
 }
@@ -1429,6 +1427,9 @@ textarea {
   background: #ffffff;
   transition: transform ease-in 0.3s;
 }
+.announcement-card:hover, .announcement-card:focus-visible {
+  cursor: pointer;
+}
 .announcement-card:hover .announcement-card__img, .announcement-card:focus-visible .announcement-card__img {
   transform: translate(-10px, 10px);
   cursor: pointer;
@@ -1553,6 +1554,7 @@ textarea {
   }
 }
 .announcement-card__title {
+  max-width: 296px;
   font-size: 20px;
   font-weight: 300;
   line-height: 26px;
@@ -1587,7 +1589,6 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  list-style: none;
   margin: 0;
   padding: 28px 0 0;
 }
@@ -1613,11 +1614,8 @@ textarea {
   color: #737373;
   cursor: pointer;
   display: flex;
-  font-size: 13px;
-  font-weight: 400;
   justify-content: center;
-  line-height: 16px;
-  padding: 8px 10px;
+  padding: 8px;
   transition: background-color ease-in 0.3s, color ease-in 0.3s, border-color ease-in 0.3s;
   position: relative;
 }
@@ -1629,4 +1627,9 @@ textarea {
   left: 0;
   top: 50%;
   transform: translate(0, -50%);
+}
+.custom-checkbox__text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
 }/*# sourceMappingURL=style.css.map */
